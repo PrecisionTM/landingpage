@@ -1,0 +1,30 @@
+# Dependencies — never commit
+node_modules/
+
+# Vercel project config — never commit (causes "Cannot load project settings" error)
+.vercel/
+.now/
+
+# Build output — Vercel generates this at deploy time
+dist/
+
+# Environment variables — never commit real values
+.env
+.env.local
+.env.production
+.env.development
+
+# Conflicting legacy Vercel files (causes "Conflicting configuration" error)
+now.json
+.nowignore
+
+# OS junk
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Editor
+.vscode/
+.idea/
+*.swp
+*.swo
